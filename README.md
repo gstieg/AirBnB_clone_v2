@@ -1,54 +1,39 @@
-# HBNB
+# **AirBnB Clone - The Console v2**
 
-This is the console /command interpreter for the Holberton Airbnb clone project. The console can be used to store objects in and retrieve objects from a JSON.
 
-### Supported classes:
-* BaseModel
-* User
-* State
-* City
-* Amenity
-* Place
-* Review
+  * Holberton project making a clone of the AirBnB web application
 
-### Commands:
-* create - create an object
-* show - show an object (based on id)
-* destroy - destroy an object
-* all - show all objects, of one type or all types
-* quit/EOF - quit the console
-* help - see descriptions of commands
+# **The Console:**
 
-To start, navigate to the project folder and enter `./console.py` in the shell.
+  * create your data model
+  * manage (create, update, destroy, etc) objects via a console / command interpreter
+  * store and persist objects to a file (JSON file)
 
-#### Create
-`create <class name>`
-Ex:
-`create BaseModel`
 
-#### Show
-`show <class name> <object id>`
-Ex:
-`show User my_id`
 
-#### Destroy
-`destroy <class name> <object id>`
-Ex:
-`destroy Place my_place_id`
+# **Commands:**
+  * create - create an object
+  * show - show an object (based on id)
+  * destroy - destroy an object
+  * all - show all objects, of one type or all types
+  * quit/EOF - quit the console
+  * help - see descriptions of commands
 
-#### All
-`all` or `all <class name>`
-Ex:
-`all` or `all State`
+# **Resources**
 
-#### Quit
-`quit` or `EOF`
+  * cmd module
+  * packages
+  * uuid module
+  * datetime
+  * unittest module
+  * args/kwargs
+  * Python test cheatsheet
 
-#### Help
-`help` or `help <command>`
-Ex:
-`help` or `help quit`
+# **Command Interpreter**
+This command interpreter has a few different uses including:
 
-Additionally, the console supports `<class name>.<command>(<parameters>)` syntax.
-Ex:
-`City.show(my_city_id)`
+    * Create a new object (ex: a new User or a new Place)
+    * Retrieve an object from a file, a database etc…
+    * Do operations on objects (count, compute stats, etc…)
+    * Update attributes of an object
+    * Destroy an object
