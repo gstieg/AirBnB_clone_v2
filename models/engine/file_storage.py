@@ -1,4 +1,4 @@
-B#!/usr/bin/python3
+#!/usr/bin/python3
 "0;95;0c""This is the file storage class for AirBnB"""
 import json
 from models.base_model import BaseModel
