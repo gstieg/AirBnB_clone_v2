@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This is the user class"""
 from models.base_model import BaseModel
-
+from sqlalchemy import Column, String
 
 class User(BaseModel):
     """This is the class for user
