@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Update User by adding attributes"""
 from models.base_model import BaseModel, Base
+from sqlalchemy import Column, String
 
 
 class User(BaseModel, Base):
