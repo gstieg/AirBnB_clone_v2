@@ -12,4 +12,4 @@ def do_pack():
     if path.succeeded:
         return path
     else:
-        return(None)
+        return None
