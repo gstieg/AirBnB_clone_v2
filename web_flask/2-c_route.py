@@ -3,9 +3,6 @@
 from flask import Flask
 app = Flask(__name__)
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
@@ -20,3 +17,7 @@ def hbnb():
 @app.route('/c/<text>', strict_slashes=False)
 def ctext(text):
     return "C {}".format(text.replace('_', ''))
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
