@@ -26,8 +26,8 @@ def ptext(text="is cool"):
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
-def num(a):
-    return '{} is a number'.format(a)
+def num(n):
+    return '{} is a number'.format(n)
 
 
 if __name__ == '__main__':
