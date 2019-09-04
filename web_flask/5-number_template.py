@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """starts a Flask web application"""
 from flask import Flask
+from flask import render_template
 app = Flask(__name__)
 
 
@@ -28,6 +29,7 @@ def ptext(text="is cool"):
 @app.route('/number/<int:n>', strict_slashes=False)
 def num(n):
     return '{} is a number'.format(n)
+
 
 @app.route('/number_template/<int:n>')
 def html(n):
